@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.459);
+    }
+
+    .attribution a {
+      color: hsl(56, 45%, 44%);
+    }
+
+    body {
+      margin: 0px;
+      background-color: hsl(212, 45%, 89%);
+    }
+
+    .main_container {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* background-color: hsl(212, 45%, 89%); */
+      height: 700px;
+    }
+
+    .child_container {
+      width: 222px;
+      height: 350px;
+      border-radius: 1rem;
+      background-color: hsl(0, 0%, 100%);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .child_container .img {
+      margin: 9px 8px;
+      margin-bottom: 0px;
+      width: 200px;
+      height: 200px;
+      border-radius: 1rem;
+      background-color: rgb(12, 101, 226);
+    }
+
+    .child_container .p1 {
+      margin: 10px 8px;
+      font-size: 16px;
+      text-align: center;
+      color: hsl(218, 44%, 22%);
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+    }
+
+    .child_container .p2 {
+      margin: 15px 0.5rem;
+      font-size: 12px;
+      text-align: center;
+      color: hsl(220, 15%, 55%);
+      font-family: "Outfit", sans-serif;
+      font-weight: 400;
+    }
+
+    .video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <video src="Fire_Embers_2___14s___4k_res.mp4" class="video" autoplay loop></video>
+  <!-- Improve your front-end skills by building projects
+
+  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level-->
+  <div class="main_container">
+    <div class="child_container">
+      <!-- <div class="img"> -->
+      <img src="images\image-qr-code.png" alt="" class="img">
+      <!-- </div> -->
+      <p class="p1">Improve your front-end skills by building projects</p>
+      <p class="p2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Parth_Gondaliya</a>.
+    </div>
+  </div>
+</body>
+
+</html>
